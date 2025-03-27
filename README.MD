@@ -41,7 +41,7 @@
 - Custom error messages.
 - Responsive design that adapts to different devices.
 
-### Likes:
+### Likes :
 
 This form allows you to:
 
@@ -77,12 +77,9 @@ To run this project you need the following tools:
 Clone this repository to your desired folder:
 
 sh
-  C:\Users\Portatil\Documents\Proyecto111
- git clone
+C:\Users\Portatil\Documents\Proyecto111
+git clone
 git@github.com :(https://github.com/alejandracaicedoo/Form_Linters.git)
-
-  
-
 
 ### Install
 
@@ -91,99 +88,83 @@ Install this project with:
 Lighthouse run
 
 sh
-    npm install -g @lhci/cli@0.7.x
-
+npm install -g @lhci/cli@0.7.x
 
 Webhint:
 
 sh
-     npm install --save-dev hint@7.x
-
+npm install --save-dev hint@7.x
 
 Stylelint:
 
 sh
-     npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 
 Eslint
 
 sh
-     npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 
 Webpack
 
 sh
-     npm init -y
-     npm install webpack webpack-cli --save-dev
-
+npm init -y
+npm install webpack webpack-cli --save-dev
 
 Webpack Css loader
 
 sh
-     npm install --save-dev style-loader css-loader
-
+npm install --save-dev style-loader css-loader
 
 Webpack html loader
 
 sh
-     npm install --save-dev html-loader
-
+npm install --save-dev html-loader
 
 Webpack html plugin
 
 sh
-     npm install --save-dev html-webpack-plugin
-
+npm install --save-dev html-webpack-plugin
 
 Webpack dev server
 
 sh
-     npm install --save-dev webpack-dev-server
-
+npm install --save-dev webpack-dev-server
 
 Babel Dependency loader
 
 sh
-     npm install --save-dev babel-loader
-
+npm install --save-dev babel-loader
 
 Minify CSS: To reduce the size of your CSS file by removing unnecessary characters such as whitespace and comments.
 
 sh
-     npm install --save-dev css-minimizer-webpack-plugin
-
+npm install --save-dev css-minimizer-webpack-plugin
 
 Split Js : If your JS file is large, splitting it into smaller modular files can help improve the loading time.
 
 sh
-     npm install --save-dev terser-webpack-plugin
-
+npm install --save-dev terser-webpack-plugin
 
 Split CSS: If your CSS file is large, splitting it into smaller modular files can help improve the loading time.
 
 sh
-     npm install mini-css-extract-plugin --save-dev
-
+npm install mini-css-extract-plugin --save-dev
 
 Babel core
 
 sh
-     npm install --save-dev @babel/core @babel/preset-env
-
+npm install --save-dev @babel/core @babel/preset-env
 
 Express and body-parser
 
 sh
-     npm install --save express body-parser
-
+npm install --save express body-parser
 
 Concurrent, the npm package for running multiple commands in parallel
 
 sh
-     npm install --save-dev concurrently
-
+npm install --save-dev concurrently
 
 ### Usage
 
@@ -192,16 +173,14 @@ To run locally run the following command:
 ## Development mode
 
 sh
-    npm run build-dev
-    npm run devserver-reload
-
+npm run build-dev
+npm run devserver-reload
 
 ## Production mode
 
 sh
-    npm run build-prod
-    npm run server-prod
-
+npm run build-prod
+npm run server-prod
 
 ### Run tests
 
@@ -210,20 +189,17 @@ To run tests, run the following command:
 To test the Stylelint linter:
 
 sh
-    npx stylelint "*/.{css,scss}"
-
+npx stylelint "\*/.{css,scss}"
 
 To test the Webhint:
 
 sh
-    npx hint .
-
+npx hint .
 
 To test the ESLint linter:
 
 sh
-    npx eslint .
-
+npx eslint .
 
 ### Deployment
 
@@ -232,8 +208,7 @@ sh
 In root project folder run the following command:
 
 sh
-    docker  build -t Formulario-Sena nginx/Dockerfile .
-
+docker build -t Formulario-Sena nginx/Dockerfile .
 
 Then run the following command:
 
@@ -241,23 +216,20 @@ sh
 
     docker -it --name tvapp  run -p 443:443 -p 80:80 -v ./dist😕usr/share/nginx/html -d Formulario-Sena
 
-
 Be sure to replace the path of your project dist folder
 
 If you want to use docker hub image repository, run the following command:
 
 sh
-    docker pull 810129/tvapp
-    docker -it --name tvapp  run -p 443:443 -p 80:80 -v ./dist😕usr/share/nginx/html -d 810129/tvapp
-
+docker pull 810129/tvapp
+docker -it --name tvapp run -p 443:443 -p 80:80 -v ./dist😕usr/share/nginx/html -d 810129/tvapp
 
 ## Local deployment using Docker-compose:
 
 In root folder run the following command:
 
 sh
-    docker compose up -d
-
+docker compose up -d
 
 The above command will deploy the app in localhost on port 443 and 80 through dockerized nginx webserver.
 
@@ -266,10 +238,9 @@ The above command will deploy the app in localhost on port 443 and 80 through do
 In root folder run the following command:
 
 sh
-    bash
+bash
 deployment.sh
- -u username -i ipaddress -d Namefolder -e environment
-
+-u username -i ipaddress -d Namefolder -e environment
 
 The arguments are:
 
@@ -290,7 +261,7 @@ Alejandra Caicedo
 
 👤 Author1
 
-- GitHub:   (https://github.com/alejandracaicedoo/Form_Linters.git)
+- GitHub: (https://github.com/alejandracaicedoo/Form_Linters.git)
 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeysson-aly-contreras/)
 
